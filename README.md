@@ -52,7 +52,13 @@ DB_PORT=5432
 DB_DATABASE=marketplace_db
 ```
 
-### 4. Crea las tablas en la base de datos
+### 4. Inicializa la base de datos
+
+```bash
+npx sequelize-cli db:create --config ./src/config/config.js
+```
+
+### 5. Crea las tablas en la base de datos
 
 Puedes habilitar la creación automática de tablas descomentando la línea en `index.js`:
 
@@ -66,13 +72,13 @@ Luego ejecuta:
 node index.js
 ```
 
-### 5. Ejecuta el seeder para poblar productos
+### 6. Ejecuta el seeder para poblar productos
 
 ```bash
 node src/seeder.js
 ```
 
-### 6. Ejecuta el servidor
+### 7. Ejecuta el servidor
 
 ```bash
 npm run dev
