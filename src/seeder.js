@@ -1,4 +1,4 @@
-const sequelize = require("./src/config/db");
+const sequelize = require("./config/db");
 const MarketplaceProduct = require("./models/MarketplaceProduct");
 
 // Datos a insertar en la tabla marketplace_products
